@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+  }
+
 .container{
     background-color: #d0d0d8;
     position: absolute;
@@ -6,5 +10,70 @@
     right: 10px;
     padding: 10px;
     top: 10px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
     
 }
+
+.header, .filter {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+
+input {
+    height: 40px;
+    flex: 1;
+    border: 10px;
+    margin-right: 10px;
+    border-radius: 3px;
+    font-size: inherit;
+    padding: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    min-width: 100px;
+    border-radius: 3px;
+    font-size: inherit;
+    background-color: #6279b8;
+}
+
+button:focus {
+    outline: none;
+}
+
+.tasks {
+    background-color: #fff;
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    width: 100%;
+    flex: 1;
+    overflow-y: scroll;
+}
+
+.task {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    border: 1px solid gray;
+    align-items: center;
+    font-size: 16px;
+}
+
+.task_content{
+    flex: 1;
+}
+
+.task__action {
+    width: 100px;
+    text-align: right;
+    padding: 10px;
+    background-color: red;
+  }
